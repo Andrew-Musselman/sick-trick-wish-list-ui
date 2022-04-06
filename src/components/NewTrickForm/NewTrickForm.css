@@ -1,0 +1,10 @@
+form {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 5%;
+}
+
+select, input, button {
+  border-radius: 10%;
+  font-family: 'Fredoka One', cursive;
+}
