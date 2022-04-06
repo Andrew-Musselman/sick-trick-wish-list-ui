@@ -17,11 +17,15 @@ class App extends Component {
       .catch(err => console.log(err))
   }
 
+  addTrick = (newTrick) => {
+    this.setState({tricks: [...this.state.tricks, newTrick]})
+  }
+
   render() {
     return (
       <div className="App">
         <h1>Sick Trick Wish List</h1>
-        <NewTrickForm />
+        <NewTrickForm addTrick={this.addTrick}/>
         <Tricks tricks={this.state.tricks}/>
       </div>
     );
