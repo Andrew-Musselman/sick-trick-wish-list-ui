@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './NewTrickFrom.css';
+import './NewTrickForm.css';
 
-class NewTrickFrom extends Component {
+class NewTrickForm extends Component {
   constructor() {
     super()
     this.state = {
@@ -38,4 +38,4 @@ class NewTrickFrom extends Component {
   }
 }
 
-export default NewTrickFrom;
+export default NewTrickForm;
