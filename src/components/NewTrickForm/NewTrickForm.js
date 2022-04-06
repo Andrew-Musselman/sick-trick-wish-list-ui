@@ -13,12 +13,21 @@ class NewTrickForm extends Component {
   }
 
   handleChange = (event) => {
-    this.setState({ value: event.target.value })
+    this.setState({ [event.target.name]: event.target.value })
   }
 
   handleSubmit = (event) => {
-    event.preventDefault
+    event.preventDefault()
+    const newTrick = {
+      id: Date.now(),
+      ...this.state
+    }
+    this.props.addTrick(newTrick)
+    this.clearInputs()
+  }
 
+  clearInputs() {
+    this.setState({stance: '', name: '', obstacle: '', link: ''})
   }
 
   render() {
@@ -43,7 +52,7 @@ class NewTrickForm extends Component {
         <label htmlFor='link'>
           <input type='text' name='link' placeholder='Link to Tutorial' value={this.state.link} onChange={this.handleChange}/>
         </label>
-        <button onClick={this.handleSubmit}>Send It!</button>
+        <button onClick={event => this.handleSubmit(event)}>Send It!</button>
       </form>
     )
   }
