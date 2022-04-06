@@ -11,6 +11,7 @@ const Tricks = ({ tricks }) => {
       tutorial ={trick.tutorial}
       id ={trick.id}
       key ={trick.id}
+      />
   })
   return (
     <div className='tricks-container'>{trickCards}</div>
