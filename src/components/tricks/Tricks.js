@@ -3,6 +3,7 @@ import TrickCard from '../TrickCard/TrickCard'
 import './Tricks.css';
 
 const Tricks = ({ tricks }) => {
+  console.log(tricks)
   const trickCards = tricks.map(trick => {
     return <TrickCard
       stance ={trick.stance}
