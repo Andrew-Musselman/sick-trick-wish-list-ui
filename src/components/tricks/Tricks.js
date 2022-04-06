@@ -1,9 +1,10 @@
 import React from 'react';
+import TrickCard from '../TrickCard/TrickCard'
 import './Tricks.css';
 
 const Tricks = ({ tricks }) => {
   const trickCards = tricks.map(trick => {
-    <Trick
+    return <TrickCard
       stance ={trick.stance}
       obstacle ={trick.obstacle}
       tutorial ={trick.tutorial}
