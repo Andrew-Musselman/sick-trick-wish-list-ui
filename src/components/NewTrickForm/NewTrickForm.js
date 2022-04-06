@@ -38,5 +38,4 @@ class NewTrickFrom extends Component {
   }
 }
 
-
-'Flatground', 'Ledge', 'Rail', 'Stairs', and 'Pool'
+export default NewTrickFrom;
