@@ -15,3 +15,5 @@ const Tricks = ({ tricks }) => {
     <div className='tricks-container'>{trickCards}</div>
   )
 }
+
+export default Tricks;
