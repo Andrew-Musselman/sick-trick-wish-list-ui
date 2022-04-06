@@ -1,5 +1,6 @@
 import { Component } from 'react';
-import Tricks from '../tricks/Tricks'
+import Tricks from '../tricks/Tricks';
+import NewTrickFrom from '../NewTrickFrom/NewTrickFrom';
 import './App.css';
 
 class App extends Component {
